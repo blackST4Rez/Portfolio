@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="fav1.png" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raka Maharjan | Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">
+                    <img src="fav1.png" alt="Logo" class="logo-img"/>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <div class="hero-subtitle">
+                    <i class="fas fa-code"></i>
+                    Full Stack Developer
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="typing-text" id="typingText"></span><span class="cursor"></span>
+                </h1>
+                <p class="hero-description">
+                    I build modern web applications using React, Node.js, Next.js, and TypeScript.
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Get In Touch
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="Pfp.png" alt="Illustration of person reading comics">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <p class="section-subtitle">Full stack developer with experience of building modern web applications</p>
+            
+            <div class="about-container">
+                <!-- Left Column: Introduction & Skills -->
+                <div class="about-left fade-in">
+                    <div class="about-intro">
+                        <h3><i class="fas fa-user"></i> Introduction</h3>
+                        <p>Crafting robust, scalable web applications with clean code.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h4><i class="fas fa-code"></i> Technical Skills</h4>
+                        
+                        <div class="skills-category">
+                            <h4><i class="fab fa-js"></i> Frontend</h4>
+                            <div class="skills-list">
+                                <span class="skill-item"><i class="fab fa-react"></i> React</span>
+                                <span class="skill-item"><i class="fas fa-bolt"></i> Next.js</span>
+                                <span class="skill-item"><i class="fab fa-js-square"></i> TypeScript</span>
+                                <span class="skill-item"><i class="fas fa-wind"></i> Tailwind CSS</span>
+                                <span class="skill-item"><i class="fas fa-layer-group"></i> Redux</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills-category">
+                            <h4><i class="fas fa-server"></i> Backend</h4>
+                            <div class="skills-list">
+                                <span class="skill-item"><i class="fab fa-node-js"></i> Node.js</span>
+                                <span class="skill-item"><i class="fas fa-server"></i> Express</span>
+                                <span class="skill-item"><i class="fab fa-python"></i> Python</span>
+                                <span class="skill-item"><i class="fas fa-leaf"></i> Django</span>
+                                <span class="skill-item"><i class="fas fa-database"></i> MySQL</span>
+                                <span class="skill-item"><i class="fas fa-leaf"></i> MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <!-- Right Column: Experience & Stats -->
+                <!-- <div class="about-right fade-in">
+                    <div class="about-card">
+                        <h4><i class="fas fa-briefcase"></i> Experience</h4>
+                        
+                        <div class="experience-timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-period">2021 - Present</span>
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem Ipsum</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolorem provident rerum minus, sunt quisquam aperiam pariatur, quae deleniti totam deserunt quasi adipisci vel explicabo, id voluptas iusto esse doloremque?</p>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <span class="timeline-period">2019 - 2021</span>
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem Ipsum</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolorem provident rerum minus, sunt quisquam aperiam pariatur, quae deleniti totam deserunt quasi adipisci vel explicabo, id voluptas iusto esse doloremque?</p>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <span class="timeline-period">2017 - 2019</span>
+                                <h5>Lorem Ipsum</h5>
+                                <p>Lorem Ipsum</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolorem provident rerum minus, sunt quisquam aperiam pariatur, quae deleniti totam deserunt quasi adipisci vel explicabo, id voluptas iusto esse doloremque?</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <div class="about-card">
+                        <h4><i class="fas fa-graduation-cap"></i> Education & Certifications</h4>
+                        <p><strong>BS in Computer Science and Information Technology</strong> - Tribhuwan University (2022-2026)</p>
+                    
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <div class="stat-number">9+</div>
+                                <div class="stat-label">Technologies</div>
+                            </div>
+
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Dedicated</div>
+                            </div>
+
+                            <div class="stat-item">
+                                <div class="stat-number">4+Years</div>
+                                <div class="stat-label">Learning</div>
+                            </div>
+
+                            <div class="stat-item">
+                                <div class="stat-number">Ready</div>
+                                <div class="stat-label">For Internship</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="background-color: var(--dark-bg);">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <img src="Ecom.png" alt="ecom" width="370px" height="250px">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">A full-featured e-commerce solution with real-time inventory, payment processing, and admin dashboard. Built with React, Django, and SQLLite.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">SQLLite</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <img src="SMS.png" alt="student management system" width="350px">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Student Management System</h3>
+                        <p class="project-description">A modern, full-stack Student Management System built with Next.js, featuring comprehensive CRUD operations for managing topics, integrated with MongoDB, and equipped with robust testing, API documentation, and validation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">NextJS</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <a href="https://github.com/blackST4Rez/SMS" target="_blank" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <img src="MEN.png" alt="MEN API" width="380px">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">MEN API Development</h3>
+                        <p class="project-description">A simple Tasks CRUD API built with Express, TypeScript, and MongoDB. This API allows users to manage tasks efficiently with features like authentication and comprehensive API documentation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">NodeJS</span>
+                            <span class="tech-tag">ExpressJS</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <a href="https://github.com/blackST4Rez/MEN-API-Development" target="_blank" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-container fade-in">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>maharjanraka2015@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+977-9803294610</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Kathmandu, Chamati</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="logo">Raka<span>.</span></a>
+                
+                <div class="social-links">
+                    <a href="https://github.com/blackST4Rez" class="social-link" target="blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/raka-maharjan-865a04226/" class="social-link" target="blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com/MaharjanRaka" class="social-link" target="blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/blackst4rez/" class="social-link" target="blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                
+                <p class="copyright">© 2023 Raka Maharjan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js">        
+    </script>
+</body>
+</html>
