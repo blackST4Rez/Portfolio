@@ -1,4 +1,4 @@
-// Typing Animation for "Raka Maharjan" - Continuous loop
+// Typing Animation for "Raka Maharjan"
 const typingText = document.getElementById('typingText');
         const nameText = "Raka Maharjan";
         let charIndex = 0;
@@ -73,7 +73,6 @@ const typingText = document.getElementById('typingText');
             const message = document.getElementById('message').value;
             
             // In a real application, you would send this data to a server
-            // For demo purposes, we'll just show an alert
             alert(`Thank you for your message, ${name}! I'll get back to you soon at ${email}.`);
             
             // Reset form
