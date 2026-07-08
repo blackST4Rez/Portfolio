@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     background-color: var(--darker-bg);
     color: var(--text);
     line-height: 1.6;
