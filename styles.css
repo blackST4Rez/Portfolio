@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
 :root {
-    --primary: #0e65d8;
+    --primary: #1e65c3;
     --primary-dark: #023d80;
     --secondary: #2778c4;
-    --dark-bg: #ffffff;
-    --darker-bg: #ffffff;
-    --card-bg: #fcfcfc;
-    --text: #000000;
-    --text-light: #1a1a1a;
-    --border: #d8d7d7c4;
+    --dark-bg: #0d1117;
+    --darker-bg: #0d1117;
+    --card-bg: #0d1117;
+    --text: #ffffff;
+    --text-light: rgb(182, 182, 182);
+    --border: #393939c4;
 }
 
 * {
@@ -21,7 +25,7 @@ html {
 }
 
 body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Google Sans Flex', sans-serif;
     background-color: var(--darker-bg);
     color: var(--text);
     line-height: 1.6;
@@ -35,8 +39,23 @@ body {
 }
 
 /* Header & Navigation */
+
+@keyframes zoomInAnimation {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.container{
+    animation-name: zoomInAnimation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
 header {
-    background-color: rgba(255, 255, 255, 0.164);
+    background-color: #0d1117;
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
@@ -73,6 +92,7 @@ nav {
     color: var(--text-light);
     text-decoration: none;
     font-weight: 500;
+    font-size: 1.3rem;
     transition: color 0.3s;
     position: relative;
 }
@@ -190,7 +210,6 @@ nav {
 
 .btn {
     padding: 0.9rem 2rem;
-    border-radius: 6px;
     font-weight: 600;
     text-decoration: none;
     display: inline-flex;
@@ -199,7 +218,7 @@ nav {
     transition: all 0.3s;
     cursor: pointer;
     border: none;
-    font-family: inherit;
+    font-family: 'Google Sans Flex', sans-serif;
 }
 
 .btn-primary {
@@ -210,7 +229,6 @@ nav {
 .btn-primary:hover {
     background-color: var(--primary-dark);
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
 }
 
 .btn-secondary {
@@ -220,7 +238,7 @@ nav {
 }
 
 .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(24, 24, 24, 0.05);
     transform: translateY(-3px);
 }
 
@@ -404,7 +422,7 @@ section {
     border-radius: 50px;
     font-weight: 500;
     cursor: crosshair;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     transition: all 0.3s;
     border: 1px solid transparent;
 }
@@ -437,7 +455,7 @@ section {
 }
 
 .stat-number {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 0.5rem;
@@ -457,15 +475,13 @@ section {
 
 .project-card {
     background-color: var(--card-bg);
-    border-radius: 12px;
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease-in-out;
     border: 1px solid var(--border);
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
 }
 
 .project-img {
@@ -513,7 +529,7 @@ section {
     color: var(--primary);
     padding: 0.3rem 0.8rem;
     border-radius: 4px;
-    font-size: 0.85rem;
+    font-size: 1rem;
 }
 
 /* Contact Section */
@@ -550,7 +566,6 @@ section {
 .contact-form {
     background-color: var(--card-bg);
     padding: 2.5rem;
-    border-radius: 12px;
     border: 1px solid var(--border);
 }
 
@@ -569,10 +584,10 @@ section {
     padding: 0.9rem 1rem;
     background-color: var(--dark-bg);
     border: 1px solid var(--border);
-    border-radius: 6px;
     color: var(--text);
     font-family: inherit;
     font-size: 1rem;
+    overflow: auto;
 }
 
 .form-control:focus {
