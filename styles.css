@@ -283,6 +283,10 @@ section {
     min-height: 100%;
 }
 
+.about-left{
+    border-right: 1px solid #1d64c2;
+}
+
 .about-left > *, .about-right > * {
     flex: 1;
 }
@@ -308,16 +312,10 @@ section {
     border-radius: 12px;
     padding: 2rem;
     margin-bottom: 2rem;
-    border-left: 4px solid var(--primary);
     transition: transform 0.3s, box-shadow 0.3s;
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.about-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .about-card h4 {
@@ -337,6 +335,10 @@ section {
     color: var(--text-light);
     margin-bottom: 1.2rem;
 }
+/* 
+h-line{
+    border-left: 1px solid blue;
+} */
 
 /* Experience Timeline */
 .experience-timeline {
