@@ -1,5 +1,5 @@
 import image from '/public/Profile.png'
-import { BiSun, BiMoon, BiEnvelope, BiPhone, BiBuilding, BiLogoGithub, BiLogoTwitter, BiLogoLinkedin } from 'react-icons/bi'
+import { BiSun, BiMoon, BiEnvelope, BiPhone, BiLogoGithub, BiLogoTwitter, BiLogoLinkedin, BiMapPin } from 'react-icons/bi'
 
 const HeaderLeft = ({darkMode, toggleDarkMode}) => {
     return (
@@ -15,7 +15,7 @@ const HeaderLeft = ({darkMode, toggleDarkMode}) => {
                 <h3 className='text-xl font-light'>MERN Stack Developer</h3>
             </div>
 
-            <button className='absolute right-10 top-10' onClick={toggleDarkMode}>
+            <button className='absolute right-10 top-10 transition-all duration-500' onClick={toggleDarkMode}>
                 {
                 darkMode ? (
                     <BiSun className='text-2xl'/>
@@ -29,15 +29,15 @@ const HeaderLeft = ({darkMode, toggleDarkMode}) => {
                 <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-bs-gray-700">
                     <ul className="space-y-3">
                         <li className="flex items-center gap-2">
-                            <BiBuilding className='text-xl' />
+                            <BiMapPin className='text-xl text-red-600' />
                             <span>Kathmandu, Nepal</span>
                         </li>
                         <li className="flex items-center gap-2">
-                            <BiEnvelope className='text-xl' />
+                            <BiEnvelope className='text-xl text-blue-400' />
                             <span>maharjanraka2015@gmail.com</span>
                         </li>
                         <li className="flex items-center gap-2">
-                            <BiPhone className='text-xl' />
+                            <BiPhone className='text-xl text-green-600' />
                             <span>+977 98-0329-4610</span>
                         </li>
                     </ul>
@@ -51,11 +51,11 @@ const HeaderLeft = ({darkMode, toggleDarkMode}) => {
                             <span>@blackST4Rez</span>
                         </li>
                         <li className="flex items-center gap-2">
-                            <BiLogoTwitter className='text-xl' />
+                            <BiLogoTwitter className='text-xl text-sky-400' />
                             <span>@blackST4Rez</span>
                         </li>
                         <li className="flex items-center gap-2">
-                            <BiLogoLinkedin className='text-xl' />
+                            <BiLogoLinkedin className='text-xl text-blue-600' />
                             <span>@RakaMaharjan</span>
                         </li>
                     </ul>
@@ -86,24 +86,6 @@ const HeaderLeft = ({darkMode, toggleDarkMode}) => {
                             <span className='text-sm text-gray-400'>2018-2019</span>
                         </li>
                     </ul>
-                </div>
-
-                <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-bs-gray-700">
-                    <h1 className='text-base font-semibold md-text-2xl'>SKILLS</h1>
-
-                    <div className="flex flex-wrap gap-3">
-                        <span className="rounded-xl bg-black text-white p-3 text-center dark:bg-white dark:text-black">HTML</span>
-                        <span className="rounded-xl bg-black text-white p-3 text-center dark:bg-white dark:text-black">CSS</span>
-                        <span className="rounded-xl bg-black text-white p-3 text-center dark:bg-white dark:text-black">JavaScript</span>
-                        <span className="rounded-xl bg-black text-white p-3 text-center dark:bg-white dark:text-black">React</span>
-                        <span className="rounded-xl bg-black text-white p-3 text-center dark:bg-white dark:text-black">Tailwind</span>
-                        <span className="rounded-xl bg-black text-white p-3 text-center dark:bg-white dark:text-black">NodeJS</span>
-                        <span className="rounded-xl bg-black text-white p-3 text-center dark:bg-white dark:text-black">Express</span>
-                        <span className="rounded-xl bg-black text-white p-3 text-center dark:bg-white dark:text-black">MongoDB</span>
-                        <span className="rounded-xl bg-black text-white p-3 text-center dark:bg-white dark:text-black">Git</span>
-                        <span className="rounded-xl bg-black text-white p-3 text-center dark:bg-white dark:text-black">Github</span>
-
-                    </div>
                 </div>
 
                 <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-bs-gray-700">

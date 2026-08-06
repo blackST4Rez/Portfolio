@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import HeaderLeft from "./components/HeaderLeft";
 import Home from "./components/Home";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode);
+    document.documentElement.style.colorScheme = darkMode ? "dark" : "light";
+  }, [darkMode]);
+
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
-    document.documentElement.classList.toggle("dark", !darkMode)
-  }
+  };
 
   return (
     <>
