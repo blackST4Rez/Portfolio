@@ -71,7 +71,7 @@ const Home = () => {
                                     Live Demo
                                     <ArrowBigRightIcon className="h-4 w-4 -rotate-45" />
                                 </a>
-                                <a href="https://github.com" target="_blank" rel="noreferrer" className="w-max mt-4 inline-flex items-center gap-2 border border-black px-4 py-2 text-sm font-semibold transition-all duration-500 bg-black text-white hover:bg-blue-700 hover:text-white dark:border-black dark:bg-blue-700 dark:text-white dark:hover:bg-black dark:hover:text-white dark:hover:border-white">
+                                <a href="https://github.com/blackST4Rez/Portfolio" target="_blank" rel="noreferrer" className="w-max mt-4 inline-flex items-center gap-2 border border-black px-4 py-2 text-sm font-semibold transition-all duration-500 bg-black text-white hover:bg-blue-700 hover:text-white dark:border-black dark:bg-blue-700 dark:text-white dark:hover:bg-black dark:hover:text-white dark:hover:border-white">
                                     Github
                                     <BiLogoGithub className="h-4 w-4" />
                                 </a>
