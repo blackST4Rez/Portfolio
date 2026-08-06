@@ -2,7 +2,9 @@
 
 const Home = () => {
     return (
-        <div>Home</div>
+        <div className="min-h-screen flex-3">
+            Home
+        </div>
     )
 }
 
