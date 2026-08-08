@@ -18,7 +18,7 @@ const Home = () => {
                     
                 <h1 className='text-2xl font-bold
                 md:text-4xl'>About</h1>
-                    <p>A MERN stack developer crafting an elegant and responsive website.</p>
+                    <p>React developer crafting an elegant and responsive website.</p>
                     
                     <div className="flex flex-wrap gap-3">
                         <span><Html5Original size={50}/></span>
