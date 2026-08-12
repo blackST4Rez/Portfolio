@@ -3,7 +3,7 @@ import { BiSun, BiMoon, BiEnvelope, BiPhone, BiLogoGithub, BiLogoTwitter, BiLogo
 
 const HeaderLeft = ({darkMode, toggleDarkMode}) => {
     return (
-        <div className='min-h-screen flex-1 relative p-10 transition-all duration-500 dark:bg-black dark:text-white sm:border-r dark:border-gray-700'>
+        <div className='min-h-screen flex-1 relative p-10 transition-all duration-500'>
         <div className="flex flex-col gap-5">
             <div className="flex flex-col items-center justify-center gap-5">
             <img src={image} alt="" className='w-32 h-32 rounded-full' />
@@ -26,7 +26,7 @@ const HeaderLeft = ({darkMode, toggleDarkMode}) => {
             </button>
             </div>
 
-                <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-bs-gray-700">
+                <div className="flex flex-col items-start justify-start gap-5 border-b p-5">
                     <ul className="space-y-3">
                         <li className="flex items-center gap-2">
                             <BiMapPin className='text-xl text-red-600' />
@@ -43,25 +43,31 @@ const HeaderLeft = ({darkMode, toggleDarkMode}) => {
                     </ul>
                 </div>
 
-                <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-bs-gray-700">
+                <div className="flex flex-col items-start justify-start gap-5 border-b p-5">
                     <h1 className="text-baes font-semibold md:text-2xl">Social</h1>
                     <ul className="space-y-3">
                         <li className="flex items-center gap-2">
                             <BiLogoGithub className='text-xl' />
-                            <span>@blackST4Rez</span>
+                            <span>
+                                <a href="https://github.com/blackST4Rez" target='_blank'>@blackST4Rez</a>
+                            </span>
                         </li>
                         <li className="flex items-center gap-2">
                             <BiLogoTwitter className='text-xl text-sky-400' />
-                            <span>@blackST4Rez</span>
+                            <span>
+                                <a href="https://x.com/MaharjanRaka" target='_blank'>@blackST4Rez</a>
+                            </span>
                         </li>
                         <li className="flex items-center gap-2">
                             <BiLogoLinkedin className='text-xl text-blue-600' />
-                            <span>@RakaMaharjan</span>
+                            <span>
+                                <a href="https://www.linkedin.com/in/raka-maharjan-865a04226/" target='_blank'>@RakaMaharjan</a>
+                            </span>
                         </li>
                     </ul>
                 </div>
 
-                <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-bs-gray-700">
+                <div className="flex flex-col items-start justify-start gap-5 border-b p-5">
                     <h1 className="text-baes font-semibold md:text-2xl">Education</h1>
 
                     <ul>
@@ -75,7 +81,7 @@ const HeaderLeft = ({darkMode, toggleDarkMode}) => {
                             <span className='font-light'>Little Angel's Secondary School</span>
                             <span className='text-sm text-gray-400'>2020-2021</span>
                         </li>
-                        <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:-left-1.5 before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:bg-black dark:before:bg-white before:transform'>
+                        <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:-left-1.5 before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full dark:before:bg-white before:bg-black before:transform'>
                             <span className='font-semibold md:text-lg'>Grade XI</span>
                             <span className='font-light'>Little Angel's Secondary School</span>
                             <span className='text-sm text-gray-400'>2019-2020</span>
@@ -88,7 +94,7 @@ const HeaderLeft = ({darkMode, toggleDarkMode}) => {
                     </ul>
                 </div>
 
-                <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-bs-gray-700">
+                <div className="flex flex-col items-start justify-start gap-5 border-b p-5">
                     <h1 className="text-bae font-semibold md:text-2xl">LANGUAGES</h1>
                     <ul className="flex list-disc flex-wrap gap-12 md:text-lg">
                         <li>English</li>
