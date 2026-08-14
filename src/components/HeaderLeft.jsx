@@ -49,19 +49,19 @@ const HeaderLeft = ({darkMode, toggleDarkMode}) => {
                         <li className="flex items-center gap-2">
                             <BiLogoGithub className='text-xl' />
                             <span>
-                                <a href="https://github.com/blackST4Rez" target='_blank'>@blackST4Rez</a>
+                                <a className='hover:text-blue-600' href="https://github.com/blackST4Rez" target='_blank'>@blackST4Rez</a>
                             </span>
                         </li>
                         <li className="flex items-center gap-2">
                             <BiLogoTwitter className='text-xl text-sky-400' />
                             <span>
-                                <a href="https://x.com/MaharjanRaka" target='_blank'>@blackST4Rez</a>
+                                <a className='hover:text-blue-600' href="https://x.com/MaharjanRaka" target='_blank'>@blackST4Rez</a>
                             </span>
                         </li>
                         <li className="flex items-center gap-2">
                             <BiLogoLinkedin className='text-xl text-blue-600' />
                             <span>
-                                <a href="https://www.linkedin.com/in/raka-maharjan-865a04226/" target='_blank'>@RakaMaharjan</a>
+                                <a className='hover:text-blue-600' href="https://www.linkedin.com/in/raka-maharjan-865a04226/" target='_blank'>@RakaMaharjan</a>
                             </span>
                         </li>
                     </ul>
@@ -71,22 +71,22 @@ const HeaderLeft = ({darkMode, toggleDarkMode}) => {
                     <h1 className="text-baes font-semibold md:text-2xl">Education</h1>
 
                     <ul>
-                        <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:-left-1.5 before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:bg-black dark:before:bg-white before:transform'>
+                        <li className={`relative flex flex-col gap-1 border-l p-6 before:absolute before:-left-1.5 before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:transform before:transition-colors before:duration-300 ${darkMode ? 'before:bg-white' : 'before:bg-black'}`}>
                             <span className='font-semibold md:text-lg'>Bachelor's of Computer Science & Information Technology</span>
                             <span className='font-light'>Asian College Of Higher Studies</span>
                             <span className='text-sm text-gray-400'>2021-Pending</span>
                         </li>
-                        <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:-left-1.5 before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:bg-black dark:before:bg-white before:transform'>
+                        <li className={`relative flex flex-col gap-1 border-l p-6 before:absolute before:-left-1.5 before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:transform before:transition-colors before:duration-300 ${darkMode ? 'before:bg-white' : 'before:bg-black'}`}>
                             <span className='font-semibold md:text-lg'>Grade XII</span>
                             <span className='font-light'>Little Angel's Secondary School</span>
                             <span className='text-sm text-gray-400'>2020-2021</span>
                         </li>
-                        <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:-left-1.5 before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full dark:before:bg-white before:bg-black before:transform'>
+                        <li className={`relative flex flex-col gap-1 border-l p-6 before:absolute before:-left-1.5 before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:transform before:transition-colors before:duration-300 ${darkMode ? 'before:bg-white' : 'before:bg-black'}`}>
                             <span className='font-semibold md:text-lg'>Grade XI</span>
                             <span className='font-light'>Little Angel's Secondary School</span>
                             <span className='text-sm text-gray-400'>2019-2020</span>
                         </li>
-                        <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:-left-1.5 before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:bg-black dark:before:bg-white before:transform'>
+                        <li className={`relative flex flex-col gap-1 border-l p-6 before:absolute before:-left-1.5 before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:transform before:transition-colors before:duration-300 ${darkMode ? 'before:bg-white' : 'before:bg-black'}`}>
                             <span className='font-semibold md:text-lg'>Grade X</span>
                             <span className='font-light'>Little Angel's School</span>
                             <span className='text-sm text-gray-400'>2018-2019</span>
